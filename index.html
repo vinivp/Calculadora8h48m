@@ -245,20 +245,26 @@
   /* customize formbutton below*/     
   formbutton("create", {
     action: "https://formspree.io/f/mgolrpzl",
-    title: "How can we help?",
+    title: "Suporte do Desenvolvedor!",
     fields: [
       { 
         type: "email", 
         label: "Email:", 
         name: "email",
         required: true,
-        placeholder: "your@email.com"
+        placeholder: "SeuEmail@email.com"
+      },
+        {
+        type: "textarea",
+        label: "Nome:",
+        name: "nome",
+        placeholder: "Qual o seu Nome?",
       },
       {
         type: "textarea",
-        label: "Message:",
+        label: "Mensagem:",
         name: "message",
-        placeholder: "What's on your mind?",
+        placeholder: "Qual a sua Dúvida ou Sugestão?",
       },
       { type: "submit" }      
     ],
@@ -273,4 +279,5 @@
   });
 </script>
 </body>
+
 </html>
